@@ -1,0 +1,20 @@
+Intrusion Detection System (IDS) - US 7,603,711 B2
+
+	Neste primeiro artigo, vemos uma patente americana de um tipo de sistema de detecção de intrusos. O autor explica um IDS convencional, um monitor de hospedeiros que alerta e filtra ataques direcionados à rede e aos sistemas.
+	O problema da rede de computadores é conectar-se à rede externa e manter-se livre de ameaças. Um tipo de proteção contra ameaças externas são os sistemas de firewall, eles controlam o tráfego que entra e sai baseado em uma política pré-definida. Um erro comumente cometido é achar que o sistema de firewall é suficiente para proteger um sistema, pelo contrário, ele só um componente de um modelo de segurança efetivo, modelo o qual possui as seguintes camadas:
+	- Política de segurança da organização;
+	- Sistema de segurança de hospedeiro;
+	- Auditoria;
+	- Segurança de roteador;
+	- Firewalls;
+	- Sistema de detecção de intrusão (IDS);
+	- Plano de resposta à incidentes.
+	
+	Múltiplas camadas em um modelo de segurança é importante, pois a falha de alguma delas em algum processo não compromete os dados da organização. Além disso, sua inter-dependência facilita o processo, como, por exemplo, alertas do IDS podem acionar o plano de resposta à incidentes.
+	IDS seguem a premissa de que cada recurso de rede e usuário desenvolve um padrão de utilização normal. Apesar de anomalias na utilização da rede às vezes surgirem, elas devem ter um motivo que pode ser explicado. Qualquer anomalia que não possa ser explicada deve ser tratada como ameaça e deve ser investigada.
+	Uma IDS típica consiste dos seguintes componentes:
+		Um componente de construção de algorítmo define regras sobre quais usuários da rede devem estar operando;
+		Uma aplicação de geração de log grava a utilização da rede;
+		Uma ferramenta automatizada revisa, cataloga e pesquisa logs;
+		Uma interface permite ao administrador gerenciar os componentes do IDS;
+	Utilizando a interface de configuração interna do IDS, o administrador da rede deve criar regras de utilização da rede para os diferentes tipos de usuários. Regras são baseadas em uma variedades de teorias: Threshold barriers - eventos específicos, gerando triggers, como utilização de banda (pode ser um DoS); Profiling - atividade dos usuários é gravada e analisada de forma estatística, caso haja uma mudança de comportamento, deve ser investigado; Known Attack Signatures - 

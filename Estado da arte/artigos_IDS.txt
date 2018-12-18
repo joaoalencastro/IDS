@@ -1,0 +1,15 @@
+x	Artigos já escolhidos:
+	- Anomaly-based network intrusion detection: Techniques, systems and challenges;
+	- Modeling intrusion detection system using hybrid intelligent systems;
+	- Information gathering with mobile agents for an intrusion detection system;
+	- Intrusion detection: Approach and performance issues of the SECURENET system;
+	- A distributed intrusion detection system for resource-constrained devices in ad-hoc networks;
+	- An Introduction to Intrusion Detection Systems;
+	- Sistemas de Detecção de Intrusos (IDS-Intrusion Detection Sytems) usando unicamente softwares Open Source;
+	- Signature Based Intrusion Detection System Using SNORT;
+
+Meus artigos:
+	- Intrusion Detection System, Michael Scheidell;
+	- Intrusion Prevention System, Amjad Abdallah Abdelkarim, Hebah H. O. Nasereddin;
+	- SnortFlow: A OpenFlow-based Intrusion Prevention System in Cloud Environment;
+	https://www.symantec.com/connect/articles/intrusion-prevention-systems-next-step-evolution-ids

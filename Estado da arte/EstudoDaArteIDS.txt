@@ -1,0 +1,186 @@
+Estudo da arte de IDS's
+
+- IDS's são programas que visam prover uma camada adicional de segurança por meio da análise de eventos em busca de anomalias de segurança tanto no âmbito da rede quanto do host. IDS's em geral fazem detecção de ataques por meio da comparação de trafégo de rede e logs de sistema com assinaturas pré-configuradas pelo administrador, em geral são sistemas que realizam análise passiva de eventos porém podem realizar ações para que um evento de segurança seja reportado para as entidades responsáveis. Além de análise de dados em busca de ataques/invasões IDS's também podem logar as informações análisadas que geraram eventos de segurança para auditorias forenses futuras.
+
+Visão geral:
+
+	O que IDS's podem fazer:
+
+		- Podem te dar visão do que está acontecendo na rede
+		- IDS's podem detectar ataques de reconhecimento e alertas de sistema
+		- Prove mais flexibilidade e infraestrutura para a segurança da rede
+		- Pode logar as informações de uma sessão em um formato específico
+		- Monitoram a rede em tempo real e fazem análise em tempo real
+		- Podem alertas entidades responsáveis por meio de um padrão previamente selecionado.
+		- Podem realizar respotas ativas por meio de ACL's, bloquear IP's e derrubar conexões.
+
+	O que IDS's (de assinatura) não podem fazer:
+
+		- IDS's são ativas, não proativas. Ou seja, elas só agem de maneira pré-determinada, elas não prevem ataques
+		- Elas não automáticas, precisam de feedback e configuração vindas de humanos
+		- IDS's servem apenas como uma camada de segurança a mais, não a única
+		- Não compensam as falhas de protocolos de rede
+		- Não protegem a rede de todos os tipos de ataques
+
+
+- As características principais de IDS's podem ser divididas em:
+
+		- Estratégia de deploy (HIDS, NIDS)
+		- Método de deteccção (Assinatura, Anomalia, Análise de pacotes e Heuristica)
+		- Response (Ativa ou passiva)
+		- Timing (Post-audit ou Real-time)
+
+Localização de IDS's em uma rede:
+
+	NIDS's (análise de rede):
+		Resumo:
+			- Fazem análise de rede em busca de ataques por meio da assinatura dos mesmos, assinaturas previamente configuradas por um administrador.
+                	  NIDS's são capazes de gerar alertas e encerrar conexões a medida que eventos de segurança, cuja assinatura foi previamente configurada, forem
+			  detectados. O uso mais padrão é utilizar NIDS's de maneira promíscua, ou seja, de maneira que o sistema consiga capturar todos os pacotes que trafegam
+                	  pelo segmento de rede
+
+		Vantagens:
+
+			- Tem uma maior segurança associada a eles pois rodam "escondidos" na rede (modo promíscuo).
+ 			- Possui pouco impacto na rede. Em geral são sistemas passivos que escutam a rede sem interferir no funcionamento padrão da mesma.
+			- Uma rede grande pode ser observada pelo NIDS's se o mesmo for bem posicionado na rede.
+
+		Desvantagens:
+
+			- Alguns IDS's tem problemas em lidar com pacotes fragmentados, podendo causar problemas durante a execução do mesmo.
+			- Muitas das vantagens dos NIDS's não se aplicam a redes modernas baseadas em switch.
+			- Apresentam problemas quando tem de lidar com trafégo rápido e de alto volume.
+			- NIDS's não podem analisar informação cifrada
+
+	HIDS's (análise de eventos no host):
+
+		Resumo:
+			- São agentes presentes em determinados hosts que realizam análise do sistema. Tal análise do sistema normalmente consiste no rastreamento de logs
+                          gerados pelo mesmo, na observação da mudança de arquivos críticos (/etc/passwd, /etc/shadow e etc) e monitoramento de atividades suspeitas.
+
+
+		Vantagens:
+			- Podem realizar deteccção de cavalos de troia ou outros ataques que envolvem integridade de software.
+			- Podem detectar ataques que não são visíveis por outras entidades da rede, até mesmo por NIDS's existentes.
+			- Podem fazer o processamento de trafégo criptografado, que é endereçado para o host no qual residem.
+			- São muito bons na deteccção de ameças internas.
+
+		Desvantagens:
+			- São mais difíceis de se gerenciar, uma vez que para cada host existem diferenças no que deve ser configurável.
+			- Não realizam uma análise de rede tão profunda quanto NIDS's, visto que só conseguem analisar pacotes endereçados para o host no qual residem.
+			- Quando lidando com rastreamento de logs de sistema a informação pode ser imensa. Dependendo da aplicação, pode não ter recursos o suficiente.
+			- Podem ser atacados e desabilitados como parte do ataque.
+
+Métodos de deteccção:
+
+	- Métodos de deteccção são o núcleo de um IDS, eles são os responsáveis por realizar a comparação de características pré-estabelecidas com o que está acontecendo no ambiente
+	  em que se encontram.
+
+	Deteccção baseada em assinatura:
+		
+		- A maneira mais "básica" de se realizar deteccção de eventos de segurança, basicamente nela são configuradas as características de determinados ataques e seus
+		  variantes afim de que quando um ataque que se assemelhe ao estabelecido for processado ele seja facilmente detectado. Para que esse tipo de deteccção seja
+		  eficiente é necessário um banco de dados robusto com as informações acerca dos mais diversos ataques e seus varientes, para que a medida do possível os ataques
+                  conhecidos sejam abordados pelo IDS.
+
+		Vantagens:
+			- Facilidade na deteccção de ataques previamente conhecidos.
+
+		Desvantagens:
+			- Não possuem nenhuma defesa para os chamados ataques zero-day.
+			- Não são capazes de lidar com fragmentação de pacotes.
+			- Precisa de manutenção constante.
+			- Não é eficiente em altas velocidades/volume de dados, uma vez que tem que processar cada eventos e comparar com uma lista possivelmente imensa de ataques.
+	
+	Deteccção baseada em anomalia:
+		
+		- Neste tipo de método o conteúdo analisado para a deteccção é divido em dois: Normal e Anomalo, em geral uma grande quantidade de dados de uma instância normal é coletada
+		  e a partir dela é definido um padrão de comportamento considerado normal. Qualquer coisa que desviar desse dito comportamento normal é considerado uma possível ameaça, logo deve ser analisado.
+		  
+		Vantagens:
+			- Detectores de anomalia podem produzir informação que por sua vez pode ser utilizada para definir novas assinaturas de ataques.
+			- **** São eficientes na detecção dos chamados atauqes zero-day. ****
+
+		Desvantagens:
+			- Detectores de anomalia em geral requerem uma extensiva lista de dados para consigar de maneira eficiente discernir o que é normal e o que é anomalo afim de diminuir
+			  os falsos positivos.
+			- Geralmente retorna um grande número de alarmes falsos em operações comuns e pode considerar normais eventos anomalos.
+			- Não consegue identificar qual ataque, nem mesmo consegue dizer se o mesmo aconteceu com sucesso.
+
+	Detecção baseada em protocolo:
+		
+		- A interpretação do pacote de acordo com as normas de um protocolo é chamada de deteccção baseada em protocolo. Possui a vantagem de detectar anomalias no conteúdo dos pacotes 
+		  de maneira mais rápida do que uma busca por uma assinatura. Esse método é muito bom no que tange a deteccção de ataques dificilmente detectados por meio de assinatura. 
+		  A principal maneira dessa técnica é realizar a comparação do pacote recebido (pertencente à determinado protocolo) com a RFC associada à aquele protocolo, em busca de erros.
+
+		Vantagens:
+			- Possui maior facilidade em lidar com alto trafégo e possuir mais escalabilidade a medida que novas "assinaturas" são adicionadas.
+			- Diminui a quantidade de falsos positivos por meio da utilização das normas vigentes nos RFC's.
+			- Permite a detecção de vários mini-exploits sem a necessidade de vários padrões de assinatura.
+
+		Desvantagens:
+			- Se encontra um novo ataque força a criação de uma nova assinatura.
+			- Está estritamente amarrado as regras da RFC
+
+	Deteccção por análise de estado:
+
+		- Este método de deteccção vem do fato de que a deteccção por meio de assinatura não possui suporte a deteccção de ataques em vários passos. Deteccção
+		  por análise de estado permite:
+
+			1-) Remontar TCP: a habilidade de reconstruir os segmentos TCP's na ordem correta sem overlapping. 
+			2-) Rastreamento de estado: a habilidade de rastrear o estado de conexões TCP (hanshake de três vias, tear down de 4 vias).
+			3-) Remontar IP: a habilidade de reconstruir os fragmentos de pacotes IP na sequência correta.
+
+		  A força dessa metodologia de deteccção de ataques de várias etapas é a defesa contra os ataques em vários passos. O problema dele é a necessidade de mais poder 
+                  computacional e não é muito bom em altas velocidades.
+
+	Deteccção Heuristíca:
+		
+		- Esse método consiste em alguma forma de lógica (algoritmo) para detectar as tentativas de intrusão. Tal algoritmo normalmente consiste da análise estatística
+		  do tipo de trafégo sendo analisado. Também utiliza inteligência artificial, maps ajustáveis e redes neurais. Esse método oferece um método mais sofisticado para os alarmes.
+		  A força desse método de deteccção se encontra no fato de conseguir identificar formas mais complexas de trafégo malicioso, porém, gera muitos falsos positivos e depende de ajustes.
+
+Métodos de resposta:
+
+	- Respostas são um conjunto de ações que podem ser tomadas pelo IDS's no momento em que um evento foi caracterizado como malicioso. Tais ações servem em geral para notificar as entidades
+          responsáveis e tentar parar o ataque antes que ele seja finalizado, existem duas categorias de respostas:
+
+	Respostas ativas:
+		- Essas são os tipos de resposta onde o IDS's toma um papel central na interrupção do ataque de maneira imediata (assim que um evento é caracterizado como malicioso) e automática.
+		  Exemplos de respostas ativas são:
+
+			- Coletar informações adicionais sobre o atacante e o ataque para gerar informação com qualidade forense.
+			- Realizar ações contra o intruso além de notificar a presença de um ataque.
+			- Suspender o progresso do ataque é a maneira mais eficiente de resposta. Bloquear o IP, porta, injetar TCP resets para terminar a conexão são respostas comuns.
+
+	Respostas passivas:
+		- Essas sãos os tipos de respostas onde o IDS's basicamente notifica de alguma maneira uma entidade responsável interessada na segurança da rede.
+		  Exemplos de respostas passivas são:
+
+			- Alarmes e notificações são geradas pelo IDS para informar quando um ataque foi detectado. 
+			- SNMP traps são enviados para a rede e dispositivos gerenciáveis. Esses permitem a infraestrutura de rede responder ao ataque.
+
+Timing:
+
+	- Timing em IDS's se refere ao tempo transcorrido entre o recebimento de um evento e sua respectiva análise. Existem duas principais maneiras de se lidar com o timing:
+
+	Post-event audit analysis:
+		- Nesse tipo de timing o flow de informações não é contínuo, uma vez que a informação é gerida de maneira similar a guarde e encaminhe. Muitos IDS's inicias
+		  utilizavam esse tipo de timing de processamento, onde um arquivo era gerado para depois ser processado. Esse tipo de análise possuir as seguintes vantagens:
+
+			- Resolve dificuldades de organizações referentes a análise de logs de auditoria, diminuindo os gastos com auditoria.
+			- Esse tipo de análise permite o refinamento das informações, permitindo também análise histórica de eventos.
+
+		  A principal falha desse método é o fato de que provavelmente, no momento em que o ataque foi detectado ele já pode ter sido concluído e o dano já foi feito.	
+
+	Real-time audit analysis:
+		- IDS's em tempo real operam de maneira continua no que tange a análise de dados. Essa é a maneira principal de se fazer NIDS's, que por sua vez processam informações
+		  provenientes da rede, examinando tanto o cabeçalho de pacotes quando o conteúdo do mesmo. A vantagem clara desse método se dá pelo fato de a medida que um ataque
+		  está ocorrendo o IDS pode o detectar e tomar alguma ação para com ele. O lado ruim desse método é o fato de que pode falhar em altas velocidades e volumes de dados.
+
+- Acerca do método de deteccção, que é o núcleo de um IDS's e necessária a existência  de funcionalidades de gerenciamento, manutenção e auditoria do mesmo. Um IDS deve prover uma interface de gerenciamento
+  do mesmo, seja ela centralizada em um única terminal ou distribuída por vários hosts, um IDS não pode ser uma caixa preta de funcionamento desconhecido, ele deve se adaptar as necessidades.
+  O gerenciamento de um IDS gira em torno de quantos hosts ou sensores ele pode "gerenciar" e analisar de forma eficiente, isso nada mais determina quais são as padrões de funcionamento do IDS
+  e por consequência em quais situações são aplicaveis ou não. Um IDS deve ser capaz de ser customizável, uma vez que ataques zero day podem muito bem ser abordados por uma configuração de usuário
+  , não se tornando necessário esperar por atualizações da empresa fabricante do IDS. Customização também é importante no que tange as necessidades de determinada instância onde o IDS é inserido, uma 
+  vez que os padrões de uma empresa por exemplo não são padrões gerais, mas sim específicos a situação em que ela se encontra e que deseja analisar.
