@@ -1,0 +1,11 @@
+IDS rodando no middleware**
+
+	ANALISE DE TRAFEGO DE REDE SOMENTE
+
+	Caso o IDS detecte tráfego anômalo na gerência de rede, ele irá enviar uma nova configuração para o raise (reportar para o RAISE)
+
+	Utilizar um IDS conhecido como suricata.
+
+	Ele irá processar TODOS os dados recebidos na instânia do UIoT. Por exemplo, um ddos lá de baixo de um sensor ou dispositivo qualquer.
+
+	Cobrir principais ataques de IoT. Não precisa analisar a nível de aplicação.
