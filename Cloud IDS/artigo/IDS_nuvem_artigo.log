@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.2)  20 DEC 2018 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.2)  17 JAN 2019 18:18
 entering extended mode
 **./IDS_nuvem_artigo.tex
 (IDS_nuvem_artigo.tex
@@ -425,38 +425,26 @@ Underfull \hbox (badness 3884) in paragraph at lines 64--65
 
 
 ]
-Underfull \hbox (badness 1558) in paragraph at lines 82--82
-\OT1/ptm/m/n/10 situa[][]ao ter[]ao de ter um com-po-nente au-di-tor de even-
- []
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 122.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 122.
+
+(IDS_nuvem_artigo.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 122.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 122.
+Package rerunfilecheck Info: File `IDS_nuvem_artigo.out' has not changed.
+(rerunfilecheck)             Checksum: 46EB477578D6892E6E040357B9EAC2D5;741.
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 83--83
-[]\OT1/ptm/m/n/10 Como nos tra-bal-hos ap-re-sen-ta-dos an-te-ri-or-mente, ser[
-]a
- []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
- (IDS_nuvem_artigo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
-
-
-Package rerunfilecheck Warning: File `IDS_nuvem_artigo.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `IDS_nuvem_artigo.out':
-(rerunfilecheck)             Before: 2D212656F53D3954957FBC6048C8EF05;687
-(rerunfilecheck)             After:  46EB477578D6892E6E040357B9EAC2D5;741.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 122.
  ) 
 Here is how much of TeX's memory you used:
- 7219 strings out of 492973
- 111710 string characters out of 3126693
- 217122 words of memory out of 3000000
- 11037 multiletter control sequences out of 15000+200000
+ 7223 strings out of 492973
+ 111767 string characters out of 3126693
+ 215890 words of memory out of 3000000
+ 11040 multiletter control sequences out of 15000+200000
  36230 words of font info for 66 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,8n,32p,753b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -467,9 +455,9 @@ imes/utmb8a.pfb><C:/Users/joao_/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/u
 rw/times/utmbi8a.pfb><C:/Users/joao_/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Users/joao_/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on IDS_nuvem_artigo.pdf (2 pages, 77682 bytes).
+Output written on IDS_nuvem_artigo.pdf (2 pages, 78638 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

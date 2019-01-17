@@ -78,9 +78,20 @@ A informação auditorada é processada pelo núcleo do IDS, que analisa seu com
 
 \section{Proposta para IoT}
 Analogamente, se um serviço que oferece uma aplicação em nuvem, trata-se a detecção de invasão dessa forma, aplicaremos esta abordagem em um ambiente de Internet das Coisas (IoT). \par
-Nessa ambiente, os nós representarão as aplicações IoT, que são executadas nos sistemas dos usuários finais. Portanto, é essencial que a não haja muito processamento ou armazenamento, esta utilização de recursos computacionais será aproveitada no Middleware oferecido pelo ambiente IoT, assim como o middleware mostrado para ambientes de nuvem. \par
-Relacionando as duas ideias, as aplicações nesta nova situação terão de ter um componente auditor de eventos, métodos de autenticação de usuário e, por fim, uma comunicação segura estabelecida com o Middleware. \par
-Como nos trabalhos apresentados anteriormente, será aproveitada a comunicação servidor cliente, onde os nós repassam dados auditorados para um controlador, no caso será o middleware, onde eles poderão ser processados baseando-se em métodos de detecção mais complexos, como a detecção de intrusão por anomalias e redes neurais citada em [1]. Porém, nem tudo será mantido, como por exemplo, a comunicação lateral entre as aplicações, ou uma comunicação peer-to-peer. Não há essa necessidade, pois os usuários finais utilizarão um acesso à aplicação por vez, e a aplicação será distribuída, o que torna a comunicação entre aplicações mais custosa. \par
+%% Nova parte %%
+
+Utilizando a definição de IoT em [4] como referência, onde há uma comunicação direta e indireta entre sensores/dispositivos e o middleware, utilizando comunicação 'Machine-to-Machine' (M2M), normalmente via serviço web REST. Este middleware proposto apresenta grande similaridade com a arquitetura orientada a serviço (SOA). \par
+
+Partindo desse ponto, sabe-se de certa forma como é o tráfego da comunicação estabelecida, mesmo que em vários pontos, é tangível fazer uma estimativa real levando em consideração os objetos na rede IoT. \par
+
+Seguindo um viés de segurança cibernética, deve ser considerado ataques nessas instâncias da rede IoT, e como foi visto em III, intrusões em 'Grid' são comuns em sistemas finais, como especificados a cima. Logo, o tráfego proveniente dos objetos, na visão do middleware, deve ser analisado. É proposto, então, a utilização de um sistema de detecção de instrusão de rede (NIDS) no middleware em questão. \par
+
+No sistema proposto, todo o tráfego da instância será auditorado e analisado baseado no que é considerado comum, caso o sistema encontre possíveis intrusões, o middleware tomará as devidas ações relacionadas a essa atividade.
+
+%%%%%%%%%%%%%%%%
+%Nessa ambiente, os nós representarão as aplicações IoT, que são executadas nos sistemas dos usuários finais. Portanto, é essencial que a não haja muito processamento ou armazenamento, esta utilização de recursos computacionais será aproveitada no Middleware oferecido pelo ambiente IoT, assim como o middleware mostrado para ambientes de nuvem. \par
+%Relacionando as duas ideias, as aplicações nesta nova situação terão de ter um componente auditor de eventos, métodos de autenticação de usuário e, por fim, uma comunicação segura estabelecida com o Middleware. \par
+%Como nos trabalhos apresentados anteriormente, será aproveitada a comunicação servidor cliente, onde os nós repassam dados auditorados para um controlador, no caso será o middleware, onde eles poderão ser processados baseando-se em métodos de detecção mais complexos, como a detecção de intrusão por anomalias e redes neurais citada em [1]. Porém, nem tudo será mantido, como por exemplo, a comunicação lateral entre as aplicações, ou uma comunicação peer-to-peer. Não há essa necessidade, pois os usuários finais utilizarão um acesso à aplicação por vez, e a aplicação será distribuída, o que torna a comunicação entre aplicações mais custosa. \par
 %Olhar anotações no caderno
 
 
@@ -100,6 +111,9 @@ Integrating a Network IDS into an Open Source Cloud Computing Environment, 2010 
 
 \bibitem{Grid_environment}
 Intrusion Detection For Computational Grids, Alexandre Schulter, Kleber Vieira, Carols Westphal, Carla Westphal,Sekkaki Abderrahim.
+
+\bibitem{IoT Middleware}
+Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices - UCIoT 2017 Workshop Presentation UCC Companion’17 - Rafael T. de Sousa Júnior, Lucas M. C. e Martins, Francisco L. de Caldas Filho, William F. Giozza, João Paulo C. L. da Costa.
 
 \end{thebibliography}
 
