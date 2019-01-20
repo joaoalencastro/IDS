@@ -2,10 +2,25 @@ IDS rodando no middleware**
 
 	ANALISE DE TRAFEGO DE REDE SOMENTE
 
-	Caso o IDS detecte tr·fego anÙmalo na gerÍncia de rede, ele ir· enviar uma nova configuraÁ„o para o raise (reportar para o RAISE)
+	Caso o IDS detecte tr√°fego an√¥malo na ger√™ncia de rede, ele ir√° enviar uma nova 
+configura√ß√£o para o raise (reportar para o RAISE)
 
 	Utilizar um IDS conhecido como suricata.
 
-	Ele ir· processar TODOS os dados recebidos na inst‚nia do UIoT. Por exemplo, um ddos l· de baixo de um sensor ou dispositivo qualquer.
+	Ele ir√° processar TODOS os dados recebidos na inst‚nia do UIoT. Por exemplo, um ddos 
+l√° de baixo de um sensor ou dispositivo qualquer.
 
-	Cobrir principais ataques de IoT. N„o precisa analisar a nÌvel de aplicaÁ„o.
+	Cobrir principais ataques de IoT. N√£o precisa analisar a n√≠vel de aplica√ß√£o.
+
+
+Parte 2:
+
+	Bruno:
+		Smart object de maior capacidade de processamento (Rpi) baixa um patch de seguran√ßa
+ao fazer o processo de autoregistro (GET). Al√©m disso, h√° um controlador dos HIDS's distribu√≠dos 
+que se comunica de tempos em tempos com cada um dos dispositivos, verificando seus arquivos de 
+configura√ß√£o e suas vacinas.
+
+	Eu:
+		Al√©m de determinar como funciona o Snort e os NIDS, devo abordar como ser√° a 
+comunica√ß√£o entre o NIDS e o middleware, que √© o RAISe. 
