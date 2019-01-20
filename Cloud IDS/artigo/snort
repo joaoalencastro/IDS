@@ -1,0 +1,9 @@
+Snort
+
+	Snort é um sistema de prevenção de intrusão de código aberto capaz de criar logs e analisar o tráfego em tempo real. Seus alertas podem ser configurados para diferentes níveis de atenção e a análise depende das vacinas instaladas.
+	
+	
+Comunicação
+
+	O "Network Intrusion Prevention System" (NIPS), além de detectar as tentativas de intrusão, toma atitudes contra a atividade maliciosa. Neste caso em questão, a inteligência do sistema se encontra no middleware IoT, dessa forma, quando o NIPS precisar realizar alguma rotina de ação, ao invés disso, ele deverá se comunicar com o middleware, para que ele possa realizar essa ação. Esse processo é dado dessa forma para que as medidas não sejem tomadas de uma forma descentralizada, pois um ambiente de internet das coisas deve estar em sincronia com todos os seus componentes.
+	A comunicação entre o NIPS e o middleware será feita através de uma API REST. Dessa forma, o NIPS poderá adicionar/retirar/modificar endereços no middleware. 

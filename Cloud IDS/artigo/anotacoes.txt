@@ -23,4 +23,5 @@ configuração e suas vacinas.
 
 	Eu:
 		Além de determinar como funciona o Snort e os NIDS, devo abordar como será a 
-comunicação entre o NIDS e o middleware, que é o RAISe. 
+comunicação entre o NIDS e o middleware, que é o RAISe. Como ser� a API. 
+		Devo detalhar onde � gerado o log.
