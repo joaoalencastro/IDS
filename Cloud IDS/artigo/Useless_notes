@@ -1,0 +1,18 @@
+% Comentado - ***Revisar*** %
+\begin{comment}
+Talvez falar um pouco mais sobre como são feitos esses ataque, quais são e como podem afetar um ambiente compartilhado de nuvem. Como um ataque a uma aplicação de um usuário pode sair do controle da máquina e expandir sua atuação para outras máquinas, quebrando a fronteira que limita os recursos de um só usuário.
+
+Ataques podem ocorrer em diferentes camadas, em diferentes níveis. Como, por exemplo, em uma aplicação web, que roda como um 'Software as a Service', ou SaaS, pode ser alvo de ataques de aplicação com XSS, ou SQL injection. \par
+Um exemplo de vulnerabilidade na camada de sistema seria 
+\end{comment}
+
+%Um ataque a um sistema de computação em nuvem pode ser silencioso "aos olhos" de um IDS baseado em rede, ou um NIDS, já que a comunicação entre nós, ou a comunicação a nível de aplicação é, normalmente, criptografada. E também, na visão do IDS baseado em detecção interna do hospedeiro, ou HIDS, pode ser despercebido, já que nem sempre ataques específicos de nuvem deixam rastros nos sistemas operacionais que compõem os nós. Dessa maneira, IDS's tradicionais não são o suficiente para identificar os ataques a ambientes em nuvem. \par
+%Em [1] é proposto o 'Grid and Cloud Computing Intrusion Detection System' (GCCIDS), um tipo de IDS específico para nuvem, no qual tem um sistema de auditoria embutido, integra conhecimento e análise comportamental para detectar intrusões. \par
+%Na solução apresentada, cada nó identifica eventos locais que possam representar ameaças e violações e alerta os outros nós. Cada IDS individual coopera na detecção de intrusão. \par
+%O componente auditor de eventos citado no sistema proposto captura dados de várias fontes, como logs de sistemas, serviço, e mensagens entre nós. Dessa maneira, o serviço de IDS analisa esses dados e aplica as devidas técnicas de detecção. Caso seja encontrado algo incomum ou inválido, o middleware é responsável por comunicar os nós e sincronizar suas tabelas de "vacinas". É importante mencionar que todos os nós devem ter acesso aos mesmos dados, para que o middleware possa criar uma virtualização do ambiente homogêneo$^{ [1] }$.
+
+%%%%%%%%%%%%%%%%
+%Nessa ambiente, os nós representarão as aplicações IoT, que são executadas nos sistemas dos usuários finais. Portanto, é essencial que a não haja muito processamento ou armazenamento, esta utilização de recursos computacionais será aproveitada no Middleware oferecido pelo ambiente IoT, assim como o middleware mostrado para ambientes de nuvem. \par
+%Relacionando as duas ideias, as aplicações nesta nova situação terão de ter um componente auditor de eventos, métodos de autenticação de usuário e, por fim, uma comunicação segura estabelecida com o Middleware. \par
+%Como nos trabalhos apresentados anteriormente, será aproveitada a comunicação servidor cliente, onde os nós repassam dados auditorados para um controlador, no caso será o middleware, onde eles poderão ser processados baseando-se em métodos de detecção mais complexos, como a detecção de intrusão por anomalias e redes neurais citada em [1]. Porém, nem tudo será mantido, como por exemplo, a comunicação lateral entre as aplicações, ou uma comunicação peer-to-peer. Não há essa necessidade, pois os usuários finais utilizarão um acesso à aplicação por vez, e a aplicação será distribuída, o que torna a comunicação entre aplicações mais custosa. \par
+%Olhar anotações no caderno
