@@ -12,7 +12,7 @@
 
 \begin{document}
 
-\title{Sistemas de detecção de intrusão\\ em ambientes de nuvem}
+\title{Sistemas de detecção de intrusão\\ em ambientes de nuvem IoT}
 
 
 \author{João~Fiuza~de~Alencastro\\Departamento~de~Engenharia~Elétrica\\Universidade~de~Brasília}% <-this % stops a space
@@ -25,7 +25,7 @@
 
 
 \begin{abstract}
-Pela sua natureza distribuída, ambientes são alvos fáceis de serem explorados. Atacantes disfarçados de usuários legítimos podem se aproveitar dos abundantes recursos que a nuvem pode oferecer. Neste artigo é discutido como um sistema de detecção de intrusão distribuído em nuvem funciona, suas vantagens e desvantagens.%   e possíveis melhorias na tecnologia existente.
+Pela sua natureza distribuída, ambientes \textit{'clusterizados'} são alvos fáceis de serem explorados. Atacantes disfarçados de usuários legítimos, por exemplo, podem se aproveitar dos abundantes recursos que a nuvem pode oferecer. Neste artigo é discutido como um sistema de detecção de intrusão distribuído em nuvem funciona inserido em um contexto de Internet das Coisas, assim também como suas vantagens e desvantagens.%   e possíveis melhorias na tecnologia existente.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -39,21 +39,26 @@ Cloud computing, Intrusion Detection, security.
 
 \section{Introdução}
 \IEEEPARstart{A}{o} analisar ambientes em nuvem, deve-se ter sempre uma visão distribuída dos componentes da topologia. Assim como aplicações comuns da internet, esses ambientes também são alvos de ataques mal intencionados. \par
-Os nós fazem parte dessa composição, esses quais devem ser monitorados individualmente, e quando um ataque ocorre, todos os outros nós que compõem a rede devem ser notificados do padrão de ataque que pode ser eminente. \par
-O monitoramento pode ser realizado por sistemas de detecção de intrusão, porém toda a comunicação requer compatibilidade entre os diferentes hospedeiros, mecanismos de comunicação, e permissões de controle sobre manutenções e atualizações dos sistemas. Middlewares em nuvem normalmente provêm tais funcionalidades, portanto uma opção interessante seria um serviço de IDS oferecido na camada de middleware (em oposição às camadas de infraestrutura e de software) $^{ [1] }$.
+Os nós - que podem ser desde aplicações em sistemas finais a microprocessadores atuando como medidores - fazem parte dessa composição, esses quais devem ser monitorados individualmente, e quando um ataque ocorre, o tratamento dos dados provenientes desses sistemas deve ser tratado de forma diferente. Quais são as atitudes que podem ser tomadas em tais circunstâncias? A confiabilidade e integridade desses dados serão comprometidos para sempre? \par
+O monitoramento pode ser realizado por sistemas de detecção de intrusão a nível de rede, porém toda a comunicação requer compatibilidade entre os diferentes hospedeiros, mecanismos de comunicação, e permissões de controle sobre manutenções e atualizações dos sistemas. Middlewares em nuvem normalmente provêm tais funcionalidades, portanto uma opção interessante seria um serviço de NIDS ("Network Intrusion Detection System") oferecido na camada de middleware (em oposição às camadas de infraestrutura e de software) $^{ [1] }$.
 
 \section{Computação em Nuvem}
 A computação em nuvem é um modelo computacional no qual os recursos são providos como um serviço através da internet. Movida conforme a demanda, ela trabalha desafogando do usuário a responsabilidade de comprar e gerenciar equipamentos complexos e dedicados de infraestrutura. \par
 O aluguel de recursos computacionais sob-demanda desloca a responsabilidade de gerência e administração para uma equipe de especialistas, reduzindo os riscos de segurança tipicamente oriundos de má configuração de sistema, falta de atualizações, ou comportamento indevido do usuário. Apesar disso, o ambiente em nuvem introduz um risco considerável ao fazer com que os usuários compartilhem recursos físicos. \par
-Cada um desses riscos de segurança deve ser tratado de forma cautelosa e de forma específica, seja o ataque conhecido ou não, deve ser detectado e devidamente analisado. Esta é outra razão pela qual uma solução integrada, levando em conta diferentes aspectos relacionados à segurança, é necessária para proteger dados de usuários e prevenir ações maliciosas contra ambientes em nuvem$^{ [2] }$.
+O sistema de computação em nuvem de interesse é voltado para Internet das Coisas (IoT), porém os princípios continuam os mesmos, assim como as vulnerabilidades. Na figura [1] abaixo, é possível verificar a topologia proposta. \par
+Cada um desses riscos de segurança deve ser tratado de forma cautelosa e de forma específica, seja o ataque conhecido ou não, deve ser detectado e devidamente analisado. Esta é outra razão pela qual uma solução integrada, levando em conta diferentes aspectos relacionados à segurança é necessária para proteger dados de usuários e prevenir ações maliciosas contra ambientes em nuvem$^{ [2] }$.
 
-% Comentado - ***Revisar*** %
-\begin{comment}
-Talvez falar um pouco mais sobre como são feitos esses ataque, quais são e como podem afetar um ambiente compartilhado de nuvem. Como um ataque a uma aplicação de um usuário pode sair do controle da máquina e expandir sua atuação para outras máquinas, quebrando a fronteira que limita os recursos de um só usuário.
+% figura 1
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{IoT_NIPS_topology.png}
+	\caption{Topologia da instância IoT}
+	\label{fig:NIPS_IoT_Topology}
+\end{figure}
 
-Ataques podem ocorrer em diferentes camadas, em diferentes níveis. Como, por exemplo, em uma aplicação web, que roda como um 'Software as a Service', ou SaaS, pode ser alvo de ataques de aplicação com XSS, ou SQL injection. \par
-Um exemplo de vulnerabilidade na camada de sistema seria 
-\end{comment}
+\section{Middleware}
+Por que o sistema de detecção deve se encontrar a nível de middleware, como foi mencionado? Como o sistema de prevenção de intrusão proposto atua na camada de rede da pilha TCP/IP, ele deve ser capaz de "observar" todo o tráfego da rede, abstraindo a aplicação e focando seus poderes de processamento em ataques de rede, como o DDoS, por exemplo. Além disso, em um contexto com recursos escassos, como o de IoT, a camada de middleware permite uma disponibilidade maior para o processamento, retirando responsabilidades dos pequenos dispositivos que participam do serviço. E por fim, IDS a nivel de middleware apresenta facilidade de administração e orquestração dos componentes da topologia. \par
+Os nós contêm os recursos, enquanto que o middleware define as políticas de acesso e controle e suporta um ambiente orientado a serviço. \par
+
 
 \section{Intrusões em 'Grid'}
 \subsection{Acesso não-autorizado}
@@ -66,38 +71,29 @@ Ataques realizados com a utilização de ferramentas ou scripts de \textit{'expl
 Enquanto que (A), (B) e (C) são ataques específicos em 'grid', estes são quaisquer outros ataques aos hospedeiros ou à rede$^{ [3] }$.
 
 \section{Detecção de Intrusão}
-Um ataque a um sistema de computação em nuvem pode ser silencioso "aos olhos" de um IDS baseado em rede, ou um NIDS, já que a comunicação entre nós, ou a comunicação a nível de aplicação é, normalmente, criptografada. E também, na visão do IDS baseado em detecção interna do hospedeiro, ou HIDS, pode ser despercebido, já que nem sempre ataques específicos de nuvem deixam rastros nos sistemas operacionais que compõem os nós. Dessa maneira, IDS's tradicionais não são o suficiente para identificar os ataques a ambientes em nuvem. \par
-Em [1] é proposto o 'Grid and Cloud Computing Intrusion Detection System' (GCCIDS), um tipo de IDS específico para nuvem, no qual tem um sistema de auditoria embutido, integra conhecimento e análise comportamental para detectar intrusões. \par
-Na solução apresentada, cada nó identifica eventos locais que possam representar ameaças e violações e alerta os outros nós. Cada IDS individual coopera na detecção de intrusão. \par
-Os nós contêm os recursos, enquanto que o middleware define as políticas de acesso e controle e suporta um ambiente orientado a serviço. \par
-O componente auditor de eventos citado no sistema proposto captura dados de várias fontes, como logs de sistemas, serviço, e mensagens entre nós. Dessa maneira, o serviço de IDS analisa esses dados e aplica as devidas técnicas de detecção. Caso seja encontrado algo incomum ou inválido, o middleware é responsável por comunicar os nós e sincronizar suas tabelas de "vacinas". É importante mencionar que todos os nós devem ter acesso aos mesmos dados, para que o middleware possa criar uma virtualização do ambiente homogêneo$^{ [1] }$.
+Além da detecção de tentavas de intrusão no sistema, é preferível que haja algum tipo de ação, que o sistema tome atitudes em relação àquela atividade mal intencionada. Então, é introduzida a ideia de "Network Intrusion Prevention System" (NIPS), que age para que os ataques sejam impedidos. Neste caso em questão, a inteligência do sistema se encontra no middleware IoT, dessa forma, quando o NIPS precisar realizar alguma rotina de ação, ao invés disso, ele deverá se comunicar com o middleware, para que ele possa realizar essa ação. Esse processo é dado dessa forma para que as medidas não sejam tomadas de uma forma descentralizada, pois um ambiente de internet das coisas deve estar em sincronia com todos os seus componentes. \par
+\subsection{Comunicação}
+A comunicação entre o NIPS e o middleware será feita através de uma API REST. Dessa forma, o NIPS poderá adicionar/retirar/modificar endereços no middleware. A ideia é implementar uma espécie de 'blacklist' no middleware, uma lista na qual o NIPS irá controlar através da comunicação com o middleware. Quando houver alguma mudança nessa lista, o middleware irá atualizar suas ações de bloqueio de acordo com esta lista. Para que isso aconteça, será necessário fazer alterações no firewall que está presente no middleware, ele será o componente que é ativo de alguma forma, pois bloqueará o tráfego malicioso detectado no NIPS, que pode ser proveniente de um dispositivo da rede IoT. Além disso será mantido um log de eventos para manter auditoria da troca de mensagens entre o sistema e o middleware. \par
 
-\section{Tratamento de erros}
-A partir do momento que o auditor de eventos armazena a atividade maliciosa, dependendo o 'timing' do IDS, ele pode tratá-los em tempo real ou esperar certo período de tempo. Cada aplicação trata esse serviço de forma que a convir. \par
-A informação auditorada é processada pelo núcleo do IDS, que analisa seu comportamento utilizando inteligência artificial para detectar suas divergências. O analisador de regras recebe pacotes auditorados e determina se alguma regra está sendo quebrada, depois retorna o resultado ao núcleo de serviço do IDS. Em posse desses resultados, o IDS calcula a probabilidade de a ação representar ou não um ataque, caso seja uma ameaça grande o bastante, gera um alerta aos outros nós.
 
-\section{Proposta para IoT}
-Analogamente, se um serviço que oferece uma aplicação em nuvem, trata-se a detecção de invasão dessa forma, aplicaremos esta abordagem em um ambiente de Internet das Coisas (IoT). \par
+\section{Especificações IoT}
+Analogamente, se um serviço que oferece uma aplicação em nuvem, trata-se a detecção de invasão dessa forma, aplicaremos esta abordagem em um ambiente de (IoT), como apresentado anteriormente. \par
 %% Nova parte %%
 
 Utilizando a definição de IoT em [4] como referência, onde há uma comunicação direta e indireta entre sensores/dispositivos e o middleware, utilizando comunicação 'Machine-to-Machine' (M2M), normalmente via serviço web REST. Este middleware proposto apresenta grande similaridade com a arquitetura orientada a serviço (SOA). \par
 
 Partindo desse ponto, sabe-se de certa forma como é o tráfego da comunicação estabelecida, mesmo que em vários pontos, é tangível fazer uma estimativa real levando em consideração os objetos na rede IoT. \par
 
-Seguindo um viés de segurança cibernética, deve ser considerado ataques nessas instâncias da rede IoT, e como foi visto em III, intrusões em 'Grid' são comuns em sistemas finais, como especificados a cima. Logo, o tráfego proveniente dos objetos, na visão do middleware, deve ser analisado. É proposto, então, a utilização de um sistema de detecção de instrusão de rede (NIDS) no middleware em questão. \par
+Seguindo um viés de segurança cibernética, deve ser considerado ataques nessas instâncias da rede IoT, e como foi visto em III, intrusões em 'Grid' são comuns em sistemas finais, como especificados a cima. Logo, o tráfego proveniente dos objetos, na visão do middleware, deve ser analisado. É dessa maneira, então, que relaciona-se a utilização de um sistema de detecção de instrusão de rede (NIDS) no middleware ao ambiente IoT. \par
 
 No sistema proposto, todo o tráfego da instância será auditorado e analisado baseado no que é considerado comum, caso o sistema encontre possíveis intrusões, o middleware tomará as devidas ações relacionadas a essa atividade.
 
-%%%%%%%%%%%%%%%%
-%Nessa ambiente, os nós representarão as aplicações IoT, que são executadas nos sistemas dos usuários finais. Portanto, é essencial que a não haja muito processamento ou armazenamento, esta utilização de recursos computacionais será aproveitada no Middleware oferecido pelo ambiente IoT, assim como o middleware mostrado para ambientes de nuvem. \par
-%Relacionando as duas ideias, as aplicações nesta nova situação terão de ter um componente auditor de eventos, métodos de autenticação de usuário e, por fim, uma comunicação segura estabelecida com o Middleware. \par
-%Como nos trabalhos apresentados anteriormente, será aproveitada a comunicação servidor cliente, onde os nós repassam dados auditorados para um controlador, no caso será o middleware, onde eles poderão ser processados baseando-se em métodos de detecção mais complexos, como a detecção de intrusão por anomalias e redes neurais citada em [1]. Porém, nem tudo será mantido, como por exemplo, a comunicação lateral entre as aplicações, ou uma comunicação peer-to-peer. Não há essa necessidade, pois os usuários finais utilizarão um acesso à aplicação por vez, e a aplicação será distribuída, o que torna a comunicação entre aplicações mais custosa. \par
-%Olhar anotações no caderno
-
+\section{Tratamento de erros}
+A partir do momento que o auditor de eventos armazena a atividade maliciosa, dependendo o 'timing' do IDS, ele pode tratá-los em tempo real ou esperar certo período de tempo. Cada aplicação trata esse serviço de forma que a convir. \par
+A informação auditorada é processada pelo núcleo do IDS, que analisa seu comportamento utilizando inteligência artificial para detectar suas divergências. O analisador de regras recebe pacotes auditorados e determina se alguma regra está sendo quebrada, depois retorna o resultado ao núcleo de serviço do IDS. Em posse desses resultados, o IDS calcula a probabilidade de a ação representar ou não um ataque, caso seja uma ameaça grande o bastante, gera um alerta aos outros nós.
 
 \section{Conclusão}
-Serviços de nuvem são, em sua grande maioria, utilizados por usuários desinformados na área de segurança da informação. Sobem aplicações sem a menor noção de vulnerabilidades expostas, deixam portas abertas, entrada de dados de usuário sem tratamento, entre outros erros comuns. Por esses e outros motivos, compartilhamento de recursos em ambientes em nuvem podem se tornar extremamente inseguros, logo a segurança deve ser provida pelo contratado. Isso facilita todo o processo de segurança, já que ele tem a visão maior da infraestrutura do ambiente. Apresentados neste artigo, os métodos de detecção de intrusão são independentes das aplicações que são executadas nas camadas superiores. \par
-% IDS a nivel de Middleware apresenta facilidade de administração e orquestração dos componentes da topologia.
+Serviços de nuvem são, em sua grande maioria, utilizados por usuários desinformados na área de segurança da informação. Sobem aplicações sem a menor noção de vulnerabilidades expostas, deixam portas abertas, entrada de dados de usuário sem tratamento, entre outros erros comuns. Por esses e outros motivos, compartilhamento de recursos em ambientes em nuvem podem se tornar extremamente inseguro, logo a segurança deve ser provida pelo contratado. Isso facilita todo o processo de segurança, já que ele tem a visão maior da infraestrutura do ambiente. Apresentados neste artigo, os métodos de detecção de intrusão são independentes das aplicações que são executadas nas camadas superiores. \par
 O middleware citado acima facilita o processo de intagração dos diferentes componentes utilizados em uma rede em nuvem, serve como controlador dos dados e os centraliza, lembrando bastante uma rede definida por software (SDN), tema bastante debatido na atualidade. \par
 Apesar de não ter sido muito abordado, a inteligência artificial que se baseia em redes neurais para a análise dos dados autidorados é muito bem vista da área de detecção de anomalias. Porém, é algo que deve ser utilizado com muito conhecimento e deve passar por muitos testes antes de ser considerada válida, pois redes neurais artificiais não são determinísticas e geram falso positivos e negativos em uma progressão não-linear.s
 
