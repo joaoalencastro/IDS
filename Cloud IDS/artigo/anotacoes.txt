@@ -25,3 +25,12 @@ configura√ß√£o e suas vacinas.
 		Al√©m de determinar como funciona o Snort e os NIDS, devo abordar como ser√° a 
 comunica√ß√£o entre o NIDS e o middleware, que √© o RAISe. Como ser· a API. 
 		Devo detalhar onde È gerado o log.
+		
+		Trocar informaÁıes de forma bidirecional. NIDS controla tudo, atÈ mesmo o caso de n„o ser ataque de rede
+		IPS E MIDDELWARE REDE LOCAL
+		SOMENTE ANOMALIA
+		OBJETIVO E PROPOSTA
+		OVERLEAF
+		BIBTEX
+		SECAO DE TRABALHOS FUTUROS
+		depois solucao proposta colocar o snort
