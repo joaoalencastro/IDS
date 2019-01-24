@@ -26,11 +26,13 @@ configuraÃ§Ã£o e suas vacinas.
 comunicaÃ§Ã£o entre o NIDS e o middleware, que Ã© o RAISe. Como será a API. 
 		Devo detalhar onde é gerado o log.
 		
-		Trocar informações de forma bidirecional. NIDS controla tudo, até mesmo o caso de não ser ataque de rede
-		IPS E MIDDELWARE REDE LOCAL
-		SOMENTE ANOMALIA
-		OBJETIVO E PROPOSTA
+		Trocar informações de forma bidirecional. NIDS controla tudo, até mesmo o caso de não ser ataque de rede	OK
+		IPS E MIDDELWARE REDE LOCAL	OK
+		SOMENTE ANOMALIA	OK
+		OBJETIVO E PROPOSTA	OK
 		OVERLEAF
 		BIBTEX
-		SECAO DE TRABALHOS FUTUROS
+		SECAO DE TRABALHOS FUTUROS	OK
+
+Futuro:
 		depois solucao proposta colocar o snort

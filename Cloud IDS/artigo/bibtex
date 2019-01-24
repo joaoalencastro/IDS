@@ -1,0 +1,27 @@
+@article{	Grid&Cloud_Computing,
+		author = "Kleber Vieira, Alexandre Schulter, Carlos Becker Westphall, Carla Merkle Westphall",
+		title = "Intrusion Detection for Grid and Cloud Computing",
+		year = "2010",
+		publisher = "CYBERSECURITY"
+		}
+
+@article{	OpenSource_Cloud_Computing,
+		author = "Claudio Mazzariello, Roberto Bifulco, Roberto Canonico",
+		title = "Integrating a Network IDS into an Open Source Cloud Computing Environment",
+		year = "2010",
+		publisher = "Sixth International Conference on Information Assurance and Security"
+		}
+
+@article{	Grid_environment,
+		author = "Alexandre Schulter, Kleber Vieira, Carols Westphal, Carla Westphal, Sekkaki Abderrahim",
+		title = "Intrusion Detection For Computational Grids",
+		year = "2008",
+		publisher = "ESRGroups France"
+		}
+
+@article{	IoT_Middleware,
+		author = "Rafael T. de Sousa Júnior, Lucas M. C. e Martins, Francisco L. de Caldas Filho, William F. Giozza, João Paulo C. L. da Costa",
+		title = "Increasing the Dependability of IoT Middleware with Cloud Computing and Microservices",
+		year = "2017",
+		publisher = "UCIoT Workshop Presentation UCC Companion’17"
+		}

@@ -5,6 +5,7 @@
 \usepackage{verbatim}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{cite}
 \usepackage[colorlinks=true,urlcolor=red,citecolor=blue,linkcolor=blue]{hyperref}
 \RequirePackageWithOptions{multicol}
 
@@ -12,7 +13,7 @@
 
 \begin{document}
 
-\title{Sistemas de detecção de intrusão\\ em ambientes de nuvem IoT}
+\title{Sistemas de prevenção de intrusão\\ em ambientes de nuvem IoT}
 
 
 \author{João~Fiuza~de~Alencastro\\Departamento~de~Engenharia~Elétrica\\Universidade~de~Brasília}% <-this % stops a space
@@ -29,7 +30,7 @@ Pela sua natureza distribuída, ambientes \textit{'clusterizados'} são alvos f�
 \end{abstract}
 
 \begin{IEEEkeywords}
-Cloud computing, Intrusion Detection, security.
+Cloud computing, Intrusion Detection, Intrusion Prevention, security, IoT.
 \end{IEEEkeywords}
 
 
@@ -56,7 +57,7 @@ Cada um desses riscos de segurança deve ser tratado de forma cautelosa e de for
 \end{figure}
 
 \section{Middleware}
-Por que o sistema de detecção deve se encontrar a nível de middleware, como foi mencionado? Como o sistema de prevenção de intrusão proposto atua na camada de rede da pilha TCP/IP, ele deve ser capaz de "observar" todo o tráfego da rede, abstraindo a aplicação e focando seus poderes de processamento em ataques de rede, como o DDoS, por exemplo. Além disso, em um contexto com recursos escassos, como o de IoT, a camada de middleware permite uma disponibilidade maior para o processamento, retirando responsabilidades dos pequenos dispositivos que participam do serviço. E por fim, IDS a nivel de middleware apresenta facilidade de administração e orquestração dos componentes da topologia. \par
+Por que o sistema de detecção deve se encontrar a nível de middleware, como foi mencionado? Como o sistema de prevenção de intrusão proposto atua na camada de rede da pilha TCP/IP, ele deve ser capaz de "observar" todo o tráfego da rede, abstraindo a aplicação e focando seus poderes de processamento em ataques de rede, como o DDoS, por exemplo. Além disso, em um contexto com recursos escassos, como o de IoT, a camada de middleware permite uma disponibilidade maior para o processamento, retirando responsabilidades dos pequenos dispositivos que participam do serviço. E por fim, IDS a nivel de middleware apresenta facilidade de administração e orquestração dos componentes da topologia. Todos esses aspectos contribuem para o fato de o NIPS estar localizado a mesma rede local do middleware, compartilhando recursos de rede. \par
 Os nós contêm os recursos, enquanto que o middleware define as políticas de acesso e controle e suporta um ambiente orientado a serviço. \par
 
 
@@ -70,13 +71,15 @@ Ataques realizados com a utilização de ferramentas ou scripts de \textit{'expl
 \subsection{Instrusões específicas de hospedeiro/rede}
 Enquanto que (A), (B) e (C) são ataques específicos em 'grid', estes são quaisquer outros ataques aos hospedeiros ou à rede$^{ [3] }$.
 
-\section{Detecção de Intrusão}
+\section{Proposta IoT}
+\subsection{Detecção de Intrusão}
 Além da detecção de tentavas de intrusão no sistema, é preferível que haja algum tipo de ação, que o sistema tome atitudes em relação àquela atividade mal intencionada. Então, é introduzida a ideia de "Network Intrusion Prevention System" (NIPS), que age para que os ataques sejam impedidos. Neste caso em questão, a inteligência do sistema se encontra no middleware IoT, dessa forma, quando o NIPS precisar realizar alguma rotina de ação, ao invés disso, ele deverá se comunicar com o middleware, para que ele possa realizar essa ação. Esse processo é dado dessa forma para que as medidas não sejam tomadas de uma forma descentralizada, pois um ambiente de internet das coisas deve estar em sincronia com todos os seus componentes. \par
+Em um primeiro momento, será utilizado somente a detecção de intrusos baseado em anomalias, ou seja, tráfegos suspeitos serão analisados, e possívelmente, bloqueados. A técnica de detecção por anomalias apresenta maior prevenção para o sistema, já que pode detectar ataques 'zero day', ou seja, ataques previamente desconhecidos.
 \subsection{Comunicação}
 A comunicação entre o NIPS e o middleware será feita através de uma API REST. Dessa forma, o NIPS poderá adicionar/retirar/modificar endereços no middleware. A ideia é implementar uma espécie de 'blacklist' no middleware, uma lista na qual o NIPS irá controlar através da comunicação com o middleware. Quando houver alguma mudança nessa lista, o middleware irá atualizar suas ações de bloqueio de acordo com esta lista. Para que isso aconteça, será necessário fazer alterações no firewall que está presente no middleware, ele será o componente que é ativo de alguma forma, pois bloqueará o tráfego malicioso detectado no NIPS, que pode ser proveniente de um dispositivo da rede IoT. Além disso será mantido um log de eventos para manter auditoria da troca de mensagens entre o sistema e o middleware. \par
+Para que o controle esteja centralizado, essa comunicação será bidirecional, de forma em que o middleware também possa conversar com o NIPS. Uma situação onde o middleware precisa bloquear um 'range' por algum motivo que não seja relacionado a ataques de rede, o processo de bloqueio continuará o mesmo, exceto pela requisição que o middleware fará para o NIPS. Dessa forma, o NIPS sempre será o componente que possui o poder de escrita na blacklist do firewall, impedindo que haja conflito de alteração.
 
-
-\section{Especificações IoT}
+\subsection{Internet of Things}
 Analogamente, se um serviço que oferece uma aplicação em nuvem, trata-se a detecção de invasão dessa forma, aplicaremos esta abordagem em um ambiente de (IoT), como apresentado anteriormente. \par
 %% Nova parte %%
 
@@ -84,7 +87,7 @@ Utilizando a definição de IoT em [4] como referência, onde há uma comunicaç
 
 Partindo desse ponto, sabe-se de certa forma como é o tráfego da comunicação estabelecida, mesmo que em vários pontos, é tangível fazer uma estimativa real levando em consideração os objetos na rede IoT. \par
 
-Seguindo um viés de segurança cibernética, deve ser considerado ataques nessas instâncias da rede IoT, e como foi visto em III, intrusões em 'Grid' são comuns em sistemas finais, como especificados a cima. Logo, o tráfego proveniente dos objetos, na visão do middleware, deve ser analisado. É dessa maneira, então, que relaciona-se a utilização de um sistema de detecção de instrusão de rede (NIDS) no middleware ao ambiente IoT. \par
+Seguindo um viés de segurança cibernética, deve ser considerado ataques nessas instâncias da rede IoT, e como foi visto em III, intrusões em 'Grid' são comuns em sistemas finais, como especificados a cima. Logo, o tráfego proveniente dos objetos, na visão do middleware, deve ser analisado. É dessa maneira, então, que relaciona-se a utilização de um sistema de prevenção de instrusão de rede (NIPS) no middleware ao ambiente IoT. \par
 
 No sistema proposto, todo o tráfego da instância será auditorado e analisado baseado no que é considerado comum, caso o sistema encontre possíveis intrusões, o middleware tomará as devidas ações relacionadas a essa atividade.
 
@@ -92,10 +95,18 @@ No sistema proposto, todo o tráfego da instância será auditorado e analisado 
 A partir do momento que o auditor de eventos armazena a atividade maliciosa, dependendo o 'timing' do IDS, ele pode tratá-los em tempo real ou esperar certo período de tempo. Cada aplicação trata esse serviço de forma que a convir. \par
 A informação auditorada é processada pelo núcleo do IDS, que analisa seu comportamento utilizando inteligência artificial para detectar suas divergências. O analisador de regras recebe pacotes auditorados e determina se alguma regra está sendo quebrada, depois retorna o resultado ao núcleo de serviço do IDS. Em posse desses resultados, o IDS calcula a probabilidade de a ação representar ou não um ataque, caso seja uma ameaça grande o bastante, gera um alerta aos outros nós.
 
+\section{Trabalhos Futuros}
+Primeiramente, com uma micro perspectiva do sistema, deverá ser trabalhados pontos como, métodos mais incisivos e certeiros de detecção de intrusões e bloqueios mais complexos. Ainda na visão micro, adotar uma ferramenta NIPS específica seria ideal para o trabalho.
+Agora em uma visão macro, esse trabalho apresenta-se como uma parte da segurança de uma complexa rede de Internet das Coisas. Esse organismo que é a segurança em diversas camadas precisa de uma grande integração entre diferentes sistemas de detecção de intrusão, e assim, terá robustez.
+
 \section{Conclusão}
 Serviços de nuvem são, em sua grande maioria, utilizados por usuários desinformados na área de segurança da informação. Sobem aplicações sem a menor noção de vulnerabilidades expostas, deixam portas abertas, entrada de dados de usuário sem tratamento, entre outros erros comuns. Por esses e outros motivos, compartilhamento de recursos em ambientes em nuvem podem se tornar extremamente inseguro, logo a segurança deve ser provida pelo contratado. Isso facilita todo o processo de segurança, já que ele tem a visão maior da infraestrutura do ambiente. Apresentados neste artigo, os métodos de detecção de intrusão são independentes das aplicações que são executadas nas camadas superiores. \par
 O middleware citado acima facilita o processo de intagração dos diferentes componentes utilizados em uma rede em nuvem, serve como controlador dos dados e os centraliza, lembrando bastante uma rede definida por software (SDN), tema bastante debatido na atualidade. \par
 Apesar de não ter sido muito abordado, a inteligência artificial que se baseia em redes neurais para a análise dos dados autidorados é muito bem vista da área de detecção de anomalias. Porém, é algo que deve ser utilizado com muito conhecimento e deve passar por muitos testes antes de ser considerada válida, pois redes neurais artificiais não são determinísticas e geram falso positivos e negativos em uma progressão não-linear.s
+
+%\bibliography{bibtex}{}
+%\bibliographystyle{plain}
+
 
 \begin{thebibliography}{1}
 
