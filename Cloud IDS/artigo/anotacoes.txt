@@ -36,3 +36,15 @@ comunicaÃ§Ã£o entre o NIDS e o middleware, que Ã© o RAISe. Como será a API.
 
 Futuro:
 		depois solucao proposta colocar o snort
+		
+		
+		
+Anotações 05/02:
+				(MPLS)
+				
+		Escopo:
+				Volume (INTEGRADO COM O MIDDLEWARE), Dispositivos que não têm sucesso (por exemplo, o dispositivo tentou se conectar 6 vezes em 10 min, bloqueie seu IP por 1 hora | INTEGRADO COM O MIDDLEWARE) e negação de serviço (REDE CONVENCIONAL) [por enquanto serão 3 regras].
+				Começar a implementar o Snort.
+		APIs:
+				API do NIPS (Controladora compartilhada) com o Middleware
+				API do NIPS "							 com o Firewall
