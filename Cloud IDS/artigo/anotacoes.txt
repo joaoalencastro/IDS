@@ -48,3 +48,7 @@ Anotações 05/02:
 		APIs:
 				API do NIPS (Controladora compartilhada) com o Middleware
 				API do NIPS "							 com o Firewall
+
+
+Anotações 12/02:
+		Comunicação agora com o Middleware (e Snort) será feita através do controller, ele toma as ações de firewall além de outras.
