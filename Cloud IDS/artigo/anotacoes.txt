@@ -52,3 +52,10 @@ Anotações 05/02:
 
 Anotações 12/02:
 		Comunicação agora com o Middleware (e Snort) será feita através do controller, ele toma as ações de firewall além de outras.
+
+Anotações 19/02:
+		Community SNMP - Dá para fazer qualquer coisa em um rotedor/switch
+
+		Servidor syslog do snort já mostra todas as alterações do snort
+
+		Comunicação middleware snort ainda é válida e o meu snort aproveitará a api do Daniel para bloquear os tráfegos.  

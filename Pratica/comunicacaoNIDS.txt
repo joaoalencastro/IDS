@@ -1,0 +1,34 @@
+	
+	Output modules
+
+		The output modules are run when the alert or logging subsystems of Snort are called, after the preprocessors and detection engine.
+		Multiple output plugins may be specified in the Snort configuration file.
+
+		Output modules are loaded at runtime by specifying the output keyword in the config file:
+
+				output <name>: <options>
+
+				output alert_syslog: log_auth log_alert
+
+				Example:
+					output alert_syslog: host=10.1.1.1:514, <facility> <priority> <options>
+
+
+	Snort output module (alert_syslog) -> Controller (Daniel) - Porta 514  |  Neste processo, o alerta deve conter uma chave para que o controller confie nele.
+
+	Para poder receber essa chave, deve ser cadastrado previamente.
+
+	No eve tem a máquina controller que aceita http post e diz o schema que é utilizado para cadastrar a API.
+
+	Logo, o middleware deve bloquear os dispositivos pela porta 514 também utilizando uma forma de alerta similar.
+
+
+
+	|||
+
+
+	Os dados recebidos pelo Server (Controller) do syslog devem ser tratados e colocados em forma de dicionário. 
+
+	
+
+	
