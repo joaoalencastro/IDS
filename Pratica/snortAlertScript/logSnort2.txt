@@ -595,6 +595,3 @@
 01:02:02.117470 IP6 (flowlabel 0xe9c66, hlim 64, next-header UDP (17) payload length: 224) ::1.48142 > ::1.514: [bad udp cksum 0x00f3 -> 0x9212!] SYSLOG, length: 216
 	Facility syslog (5), Severity error (3)
 	Msg: Feb 24 00:17:49 snort rsyslogd-2222: command 'KLogPermitNonKernelFacility' is currently not permitted - did you already set it via a RainerScript command (v6+ config)? [v8.16.0 try http://www.rsyslog.com/e/2222 ]
-01:02:02.117504 IP6 (flowlabel 0xe9c66, hlim 64, next-header UDP (17) payload length: 90) ::1.48142 > ::1.514: [bad udp cksum 0x006d -> 0x5154!] SYSLOG, length: 82
-	Facility kernel (0), Severity info (6)
-
