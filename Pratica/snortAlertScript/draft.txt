@@ -1,924 +1,199 @@
-Time: Feb 24 00:44:05
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:05
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:44:00
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:00
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:55
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:55
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:50
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:50
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:36
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:36
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:23
-Type: dhclient[998]
-
-Time: Feb 24 00:49:51
-Type: dhclient[998]
-
-Time: Feb 24 00:43:16
-Type: kernel
-
-Time: Feb 24 00:43:16
-Type: systemd[1]
-
-Time: Feb 24 00:43:16
-Type: systemd[1]
-
-Time: Feb 24 00:43:16
-Type: snort[1489]
-
-Time: Feb 24 00:43:15
-Type: kernel
-
-Time: Feb 24 00:43:15
-Type: snort[1489]
-
-Time: Feb 24 00:43:52
-Type: dhclient[998]
-
-Time: Feb 24 00:49:38
-Type: dhclient[998]
-
-Time: Feb 24 00:43:03
-Type: dhclient[998]
-
-Time: Feb 24 00:43:14
-Type: systemd[1]
-
-Time: Feb 24 00:20:35
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:35
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:29
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:29
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:25
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:42
-Type: dhclient[998]
-
-Time: Feb 24 00:49:39
-Type: kernel
-
-Time: Feb 24 00:49:38
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:49:38
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:32
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:49:32
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:30
-Type: dhclient[998]
-
-Time: Feb 24 00:20:25
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:14
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:14
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:10
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:10
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:05
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:58:23
-Type: kernel
-
-Time: Feb 24 00:20:05
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:01
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:58:02
-Type: kernel
-
-Time: Feb 24 00:58:02
-Type: kernel
-
-Time: Feb 24 00:57:55
-Type: dhclient[998]
-
-Time: Feb 24 00:57:40
-Type: dhclient[998]
-
-Time: Feb 24 00:57:45
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:57:45
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:57:01
-Type: CRON[1512]
-
-Time: Feb 24 00:56:59
-Type: dhclient[998]
-
-Time: Feb 24 00:57:01
-Type: CRON[1512]
-
-Time: Feb 24 00:57:01
-Type: CRON[1513]
-
-Time: Feb 24 00:20:39
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:39
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:42:12
-Type: dhclient[998]
-
-Time: Feb 24 00:42:15
-Type: systemd[1]
-
-Time: Feb 24 00:20:01
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:19:49
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:19:49
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:16
-Type: dhclient[998]
-
-Time: Feb 24 00:49:27
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2222
-
-Time: Feb 24 00:58:16
-Type: kernel
-
-Time: Feb 24 01:02:02
-Type: kernel
-
-Time: Feb 24 01:02:01
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 01:02:01
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 01:01:58
-Type: TCP
-Source: 192.168.1.12:50668
-Destination: 192.168.1.14:80
-
-
-Time: Feb 24 01:01:53
-Type: dhclient[998]
-
-Time: Feb 24 01:01:53
-Type: TCP
-Source: 192.168.1.12:49292
-Destination: 192.168.1.14:80
-
-
-Time: Feb 24 01:00:44
-Type: dhclient[998]
-
-Time: Feb 24 01:00:57
-Type: dhclient[998]
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2184
-
-Time: Feb 24 00:21:19
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:21:19
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:40
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:40
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:44:10
-Type: dhclient[998]
-
-Time: Feb 24 00:49:51
-Type: kernel
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2207
-
-Time: Feb 24 00:19:45
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:19:45
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:21:04
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:23:09
-Type: systemd-tmpfiles[1450]
-
-Time: Feb 24 00:23:09
-Type: systemd[1]
-
-Time: Feb 24 00:43:59
-Type: dhclient[998]
-
-Time: Feb 24 00:49:27
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:23:09
-Type: systemd[1]
-
-Time: Feb 24 00:57:49
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:57:49
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:22:36
-Type: systemd[1]
-
-Time: Feb 24 00:22:36
-Type: Not Found
-
-Time: Feb 24 00:42:17
-Type: kernel
-
-Time: Feb 24 00:22:35
-Type: systemd[1]
-
-Time: Feb 24 00:21:24
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:21:24
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:21:04
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:19
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:57:15
-Type: dhclient[998]
-
-Time: Feb 24 00:43:45
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:45
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:59:44
-Type: kernel
-
-Time: Feb 24 00:59:41
-Type: kernel
-
-Time: Feb 24 00:20:19
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:17:49
-Type: rsyslogd
-
-Time: Feb 24 00:17:49
-Type: rsyslogd
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2039
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2007
-
-Time: Feb 24 00:17:49
-Type: systemd[1]
-
-Time: Feb 24 00:17:49
-Type: systemd[1]
-
-Time: Feb 24 00:17:49
-Type: systemd[1]
-
-Time: Feb 24 00:42:22
-Type: dhclient[998]
-
-Time: Feb 24 00:17:49
-Type: systemd[1]
-
-Time: Feb 24 00:19:55
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:19:55
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:17:49
-Type: rsyslogd
-
-Time: Feb 24 00:21:14
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:19
-Type: dhclient[998]
-
-Time: Feb 24 00:22:36
-Type: snort[1401]
-
-Time: Feb 24 00:44:11
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:11
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:42:15
-Type: systemd[1]
-
-Time: Feb 24 00:21:14
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:21:10
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:21:10
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:21:00
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:21:00
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:54
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:54
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:49
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:49
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:46
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:15
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:15
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:36:42
-Type: dhclient[998]
-
-Time: Feb 24 00:20:46
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:44:05
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:05
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:44:00
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:44:00
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:55
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:55
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:50
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:50
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:36
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:36
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:43:23
-Type: dhclient[998]
-
-Time: Feb 24 00:49:51
-Type: dhclient[998]
-
-Time: Feb 24 00:43:16
-Type: kernel
-
-Time: Feb 24 00:43:16
-Type: systemd[1]
-
-Time: Feb 24 00:43:16
-Type: systemd[1]
-
-Time: Feb 24 00:43:16
-Type: snort[1489]
-
-Time: Feb 24 00:43:15
-Type: kernel
-
-Time: Feb 24 00:43:15
-Type: snort[1489]
-
-Time: Feb 24 00:43:52
-Type: dhclient[998]
-
-Time: Feb 24 00:49:38
-Type: dhclient[998]
-
-Time: Feb 24 00:43:03
-Type: dhclient[998]
-
-Time: Feb 24 00:43:14
-Type: systemd[1]
-
-Time: Feb 24 00:20:35
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:35
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:29
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:29
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:25
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:43:42
-Type: dhclient[998]
-
-Time: Feb 24 00:49:39
-Type: kernel
-
-Time: Feb 24 00:49:38
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:49:38
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:32
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:49:32
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:30
-Type: dhclient[998]
-
-Time: Feb 24 00:20:25
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:14
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:14
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:10
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:10
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:05
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:58:23
-Type: kernel
-
-Time: Feb 24 00:20:05
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:20:01
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:58:02
-Type: kernel
-
-Time: Feb 24 00:58:02
-Type: kernel
-
-Time: Feb 24 00:57:55
-Type: dhclient[998]
-
-Time: Feb 24 00:57:40
-Type: dhclient[998]
-
-Time: Feb 24 00:57:45
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:57:45
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:57:01
-Type: CRON[1512]
-
-Time: Feb 24 00:56:59
-Type: dhclient[998]
-
-Time: Feb 24 00:57:01
-Type: CRON[1512]
-
-Time: Feb 24 00:57:01
-Type: CRON[1513]
-
-Time: Feb 24 00:20:39
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:20:39
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:42:12
-Type: dhclient[998]
-
-Time: Feb 24 00:42:15
-Type: systemd[1]
-
-Time: Feb 24 00:20:01
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:19:49
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:19:49
-Type: ICMP
-Source: 192.168.1.14
-Destination: 192.168.1.12
-
-
-Time: Feb 24 00:49:16
-Type: dhclient[998]
-
-Time: Feb 24 00:49:27
-Type: ICMP
-Source: 192.168.1.12
-Destination: 192.168.1.14
-
-
-Time: Feb 24 00:17:49
-Type: rsyslogd-2222
-
+{'Time': 'Feb 24 00:44:05', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:05', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:44:00', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:00', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:55', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:55', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:50', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:50', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:36', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:36', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:23', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:51', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'snort[1489]'}
+{'Time': 'Feb 24 00:43:15', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:43:15', 'Type': 'snort[1489]'}
+{'Time': 'Feb 24 00:43:52', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:03', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:14', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:20:35', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:35', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:29', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:29', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:25', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:42', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:39', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:32', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:49:32', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:30', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:20:25', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:14', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:14', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:10', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:10', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:05', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:58:23', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:20:05', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:01', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:58:02', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:58:02', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:57:55', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:40', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:45', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:57:45', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1512]'}
+{'Time': 'Feb 24 00:56:59', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1512]'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1513]'}
+{'Time': 'Feb 24 00:20:39', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:39', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:42:12', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:42:15', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:20:01', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:19:49', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:19:49', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:16', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:27', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2222'}
+{'Time': 'Feb 24 00:58:16', 'Type': 'kernel'}
+{'Time': 'Feb 24 01:02:02', 'Type': 'kernel'}
+{'Time': 'Feb 24 01:02:01', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 01:02:01', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 01:01:58', 'Type': 'TCP', 'Destination': '192.168.1.14:80', 'Source': '192.168.1.12:50668'}
+{'Time': 'Feb 24 01:01:53', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 01:01:53', 'Type': 'TCP', 'Destination': '192.168.1.14:80', 'Source': '192.168.1.12:49292'}
+{'Time': 'Feb 24 01:00:44', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 01:00:57', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2184'}
+{'Time': 'Feb 24 00:21:19', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:21:19', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:40', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:40', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:44:10', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:51', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2207'}
+{'Time': 'Feb 24 00:19:45', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:19:45', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:21:04', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:23:09', 'Type': 'systemd-tmpfiles[1450]'}
+{'Time': 'Feb 24 00:23:09', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:43:59', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:27', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:23:09', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:57:49', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:57:49', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:22:36', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:22:36', 'Type': 'Not Found'}
+{'Time': 'Feb 24 00:42:17', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:22:35', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:21:24', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:21:24', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:21:04', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:19', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:57:15', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:45', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:45', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:59:44', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:59:41', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:20:19', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2039'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2007'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:42:22', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:19:55', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:19:55', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd'}
+{'Time': 'Feb 24 00:21:14', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:19', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:22:36', 'Type': 'snort[1401]'}
+{'Time': 'Feb 24 00:44:11', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:11', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:42:15', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:21:14', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:21:10', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:21:10', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:21:00', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:21:00', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:54', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:54', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:49', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:49', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:46', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:15', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:15', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:36:42', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:20:46', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:44:05', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:05', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:44:00', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:44:00', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:55', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:55', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:50', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:50', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:36', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:36', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:43:23', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:51', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:43:16', 'Type': 'snort[1489]'}
+{'Time': 'Feb 24 00:43:15', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:43:15', 'Type': 'snort[1489]'}
+{'Time': 'Feb 24 00:43:52', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:03', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:43:14', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:20:35', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:35', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:29', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:29', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:25', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:43:42', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:39', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:49:38', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:32', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:49:32', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:30', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:20:25', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:14', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:14', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:10', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:10', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:05', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:58:23', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:20:05', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:20:01', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:58:02', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:58:02', 'Type': 'kernel'}
+{'Time': 'Feb 24 00:57:55', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:40', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:45', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:57:45', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1512]'}
+{'Time': 'Feb 24 00:56:59', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1512]'}
+{'Time': 'Feb 24 00:57:01', 'Type': 'CRON[1513]'}
+{'Time': 'Feb 24 00:20:39', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:20:39', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:42:12', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:42:15', 'Type': 'systemd[1]'}
+{'Time': 'Feb 24 00:20:01', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:19:49', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:19:49', 'Type': 'ICMP', 'Destination': '192.168.1.12', 'Source': '192.168.1.14'}
+{'Time': 'Feb 24 00:49:16', 'Type': 'dhclient[998]'}
+{'Time': 'Feb 24 00:49:27', 'Type': 'ICMP', 'Destination': '192.168.1.14', 'Source': '192.168.1.12'}
+{'Time': 'Feb 24 00:17:49', 'Type': 'rsyslogd-2222'}

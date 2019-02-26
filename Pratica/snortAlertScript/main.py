@@ -7,6 +7,7 @@ def interpretAlert(alert):
     time_stamp = splitted_alert[1] + " " + splitted_alert[2] + " " + splitted_alert[3]
     type = ''
     snort_rule = False
+    alert_dict = {}
 
     try:
         for part in splitted_alert:
@@ -23,18 +24,17 @@ def interpretAlert(alert):
         type = 'Not Found'
 
 
-    print("Time: " + time_stamp)
-    print("Type: " + type)
+    #print("Time: " + time_stamp)
+    #print("Type: " + type)
 
     if snort_rule:
-        source = splitted_alert[-3]
-        destiny = splitted_alert[-1]
+        alert_dict = {"Time":time_stamp, "Type":type, "Source":splitted_alert[-3], "Destination":splitted_alert[-1][:-1] }
+    else:
+        alert_dict = {"Time":time_stamp, "Type":type}
 
-        print("Source: " + source)
-        print("Destination: " + destiny)
-    print()
-
-    pass
+        #print("Source: " + source)
+        #print("Destination: " + destiny)
+    return alert_dict
 
 def read_log_file(file):
     log_file = open(file, 'r')
@@ -52,4 +52,4 @@ def read_log_file(file):
 
 messages = read_log_file("logSnort2.txt")
 for message in messages:
-    interpretAlert(message)
+    print(interpretAlert(message))

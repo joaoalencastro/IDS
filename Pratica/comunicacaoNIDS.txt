@@ -27,8 +27,9 @@
 	|||
 
 
-	Os dados recebidos pelo Server (Controller) do syslog devem ser tratados e colocados em forma de dicionário. 
+	Os dados recebidos pelo Server (Controller) do syslog devem ser tratados e colocados em forma de dicionário.
 
 	
+	Reunião 26/02:
 
-	
+		Devo transformar o identificador (parser) para sien (sem regex).
