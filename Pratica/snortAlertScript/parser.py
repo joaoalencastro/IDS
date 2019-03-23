@@ -34,5 +34,4 @@ def snort_parse(logfile):
 
 
 
-#print(listdir(r'C:\Users\João\Documents\GitHub\IDS\Pratica\snortAlertScript'))
 snort_parse('alert.full')

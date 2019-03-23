@@ -1,0 +1,16 @@
+
+Ataques IoT:
+	
+	A OWASP, "Open Web Application Security Project", é uma comunidade aberta dedicada a possibilitar organizações a conceber, desenvolver, adquirir, operar e manter aplicações que podem ser confiadas. Em 2018, atualizaram a 'top 10', lista das dez maiores vulnerabilidades na área de internet das coisas. Como seu primeiro item, está a problemática de senhas fracas, previsíveis e 'hardcoded' (senhas e segredos escritos em texto simples no código-fonte), vulnerabilidade que não se aplica neste escopo de estudo, porque a camada de aplicação foi abstraída e não temos como analisar esse tipo de informação, enquadrando a solução como complementar. Já no segundo item, encontra-se algo totalmente compatível com o estudo realizado, pois diz respeito a serviços inseguros de rede. Neste tópicos, podem ser encaixados inúmeros tipos de ataques, como por exemplo, syn flood, land attack, smurf attack, ICMP flood, UDP flood [citar referência]. Neste ponto, deverá ser analisado confiabilidade, integridade/autenticidade, disponibilidade da informação pode ser comprometida. Os outros oito itens da lista são pertinentes quanto se trata de construir uma solução interoperável e modular de segurança em IoT, porém nenhuma delas se encaixa nesta solução com a mesma relevância que o item dois, mostrando-se complementares ao estudo.
+
+
+
+Explicando a topologia:
+
+	Dentro da LAN da nuvem, existe um tráfego considerado normal do middleware IoT. Esse será o fluxo de dados monitorado em nosso escopo. Portanto, o IDS recebe um espelhamento do tráfego e analisa os pacotes, distinguindo atividades maliciosas de atividades comuns. Nas configurações do Snort existem regras estabelecidas fornecidas pela comunidade, além de thresholds específicos para detectar anomalias de retransmissões, configurando, por exemplo, um DoS.
+	Uma vez que o IDS gera alertas - em tempo real -, ele os envia por meio do protocolo syslog a um servidor controlador o qual fará o processamento destes. O controlador, então, fará as decisões de bloqueio ou permissão de endereços IP que se comunicam com o Middleware. Por meio de uma API, serão informados ao firewall iptables quais ações devem ser tomadas a fim de que não haja perigos ao sistema.
+
+
+Artigo X (ids em cloud em iot):
+
+	1) Em sua arquitetura proposta, há requisições desnecessárias, que podem criar gargalos na rede. Nesta solução, é feita a captura de pacotes, extração das informações e, antes de ser feito o processamento do pacote, as informações já são inseridas no DB, depois de constatado que não há anomalia, a informação é retirada do DB, criando requisições sem necessidade. Este processo pode ser evidenciado no fluxograma da seção 4.1, figura 4.2. 
