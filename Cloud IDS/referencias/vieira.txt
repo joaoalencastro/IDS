@@ -1,5 +1,0 @@
-Introdução
-
-	Pela sua natureza distribuída, ambientes são alvos fáceis de serem explorados. Atacantes disfarçados de usuários legítimos podem se aproveitar dos abundantes recursos que a nuvem pode oferecer.
-
-	(Comentários no pdf)
